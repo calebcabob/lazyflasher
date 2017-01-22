@@ -4,7 +4,7 @@ VERSION ?= 4.1
 
 DATE := $(shell date +'%Y%m%d-%H%M')
 
-ZIP := $(NAME)-$(VERSION)-$(DATE).zip
+ZIP := $(NAME)-$(VERSION).zip
 
 EXCLUDE := Makefile README.md *.git*
 
@@ -19,5 +19,5 @@ $(ZIP):
 	@echo "Done."
 
 clean:
-	@rm -vf "$(NAME)-"*.zip*
+	@rm -vf "$(NAME)"*.zip*
 	@echo "Done."
